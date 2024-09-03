@@ -4,10 +4,12 @@
     "description": "A demo package for Node.JS modules",
     "scripts": {
         "build": "tsc",
-        "ci": "npm run build && npm run check-format && npm run check-exports",
+        "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
         "format": "prettier --write .",
         "check-format": "prettier --check .",
-        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
+        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+        "test": "vitest run",
+        "dev": "vitest"
     },
     "keywords": [
         "demo",
@@ -30,7 +32,8 @@
     "devDependencies": {
         "@arethetypeswrong/cli": "^0.15.4",
         "prettier": "^3.3.3",
-        "typescript": "^5.5.4"
+        "typescript": "^5.5.4",
+        "vitest": "^2.0.5"
     },
     "main": "dist/index.js"
 }
