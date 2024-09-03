@@ -1,6 +1,6 @@
 {
     "name": "node-package-demo",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A demo package for Node.JS modules",
     "scripts": {
         "build": "tsc",
