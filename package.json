@@ -1,5 +1,5 @@
 {
-    "name": "node-package-demo",
+    "name": "@roko7/node-package-demo",
     "version": "1.0.1",
     "description": "A demo package for Node.JS modules",
     "scripts": {
